@@ -42,48 +42,48 @@ RSpec.describe 'Numbers Exercises' do
       expect(remainder(25, 5)).to eq(0)
     end
 
-    xit 'returns the remainder when it is not 0' do
+    it 'returns the remainder when it is not 0' do
       expect(remainder(13, 5)).to eq(3)
     end
   end
 
   describe 'float exercise' do
 
-    xit 'returns a float' do
+    it 'returns a float' do
       expect(float_division(10, 2)).to eql(5.0)
     end
   end
 
   describe 'string to number exercise' do
 
-    xit 'returns an integer from a string' do
+    it 'returns an integer from a string' do
       expect(string_to_number('1')).to eq(1)
     end
 
-    xit 'returns a negative integer from a string' do
+    it 'returns a negative integer from a string' do
       expect(string_to_number('-5')).to eq(-5)
     end
   end
 
   describe 'even exercise' do
 
-    xit 'returns true when the number is even' do
-      expect(even?(6)).to eq(true)
+    it 'returns true when the number is even' do
+      expect(6.even?).to eq(true)
     end
 
-    xit 'returns false when the number is not even' do
-      expect(even?(5)).to eq(false)
+    it 'returns false when the number is not even' do
+      expect(5.even?).to eq(false)
     end
   end
 
   describe 'odd exercise' do
 
-    xit 'returns true when the number is odd' do
-       expect(odd?(9)).to eq(true)
+    it 'returns true when the number is odd' do
+       expect(9.odd?).to eq(true)
     end
 
-    xit 'returns false when the number is not odd' do
-       expect(odd?(6)).to eq(false)
+    it 'returns false when the number is not odd' do
+       expect(6.odd?).to eq(false)
     end
 
   end
